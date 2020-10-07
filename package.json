@@ -19,12 +19,14 @@
     "d3-selection": "^1.4.1",
     "d3-time-format": "^2.2.3",
     "d3-tip": "^0.9.1",
+    "global": "^4.4.0",
     "katex": "^0.11.1",
     "ndarray": "^1.0.18",
     "ndarray-scratch": "^1.2.0",
     "numpy-parser": "^1.2.3",
     "query-string": "^6.11.1",
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "surge": "^0.21.6"
   },
   "scripts": {
     "build": "rollup -c",

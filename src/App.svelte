@@ -59,24 +59,24 @@
 
 
   $: Time_to_death     = 32
-  $: logN              = Math.log(7e6)
+  $: logN              = Math.log(3.3e8)
   $: N                 = Math.exp(logN)
-  $: I0                = 1
-  $: R0                = 2.2
-  $: D_incbation       = 5.2       
-  $: D_infectious      = 2.9 
+  $: I0                = 2000
+  $: R0                = 3
+  $: D_incbation       = 5
+  $: D_infectious      = 14
   $: D_recovery_mild   = (14 - 2.9)  
   $: D_recovery_severe = (31.5 - 2.9)
   $: D_hospital_lag    = 5
   $: D_death           = Time_to_death - D_infectious 
   $: CFR               = 0.0065
-  $: InterventionTime  = 100  
+  $: InterventionTime  = 98
   $: OMInterventionAmt = 2/3
   $: InterventionAmt   = 1 - OMInterventionAmt
   $: Time              = 220
   $: Xmax              = 110000
   $: dt                = 2
-  $: P_SEVERE          = 0.2
+  $: P_SEVERE          = 0.05
   $: duration          = 7*12*1e10
 
   $: state = location.protocol + '//' + location.host + location.pathname + "?" + queryString.stringify({"Time_to_death":Time_to_death,
@@ -336,7 +336,7 @@
 
   window.addEventListener('mouseup', unlock_yaxis);
 
-  $: checked = [true, true, false, true, true]
+  $: checked = [false, false, false, true, true]
   $: active  = 0
   $: active_ = active >= 0 ? active : Iters.length - 1
 
