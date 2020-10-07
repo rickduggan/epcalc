@@ -69,7 +69,7 @@
   $: D_recovery_severe = (31.5 - 2.9)
   $: D_hospital_lag    = 5
   $: D_death           = Time_to_death - D_infectious 
-  $: CFR               = 0.02  
+  $: CFR               = 0.0065
   $: InterventionTime  = 100  
   $: OMInterventionAmt = 2/3
   $: InterventionAmt   = 1 - OMInterventionAmt
